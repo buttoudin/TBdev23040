@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            text-align: center;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <form>
+        <input type="text" name="nom">
+        <input type="text" name="prenom">
+        <button type="submit">envoyer</button>
+    </form><br>
+    <label for="nom">Nom:</label><input type="text" name="nom" id="nom" size="50" maxlength="50" placeholder="Dave LOPER"><br>
+    <label for="couleur">Choisissez votre couleur</label>
+<select id="couleur"> 
+    <option value="">-</option>
+    <option value="Bleu">Bleu</option>
+    <option value="Rouge">Rouge</option>
+    <option value="Vert">Vert</option>
+    <option value="Jaune">Jaune</option>
+    <option value="Blanc">Blanc</option>
+</select>
+<fieldset>
+    <legend>Coordonnées</legend>
+    <label for="nom">Nom:</label><input type="text" name="nom" id="nom"><br>
+    <label for="email">Email:</label><input type="email" name="email" id="email"><br>
+    <label for="date">Date de naissance:</label><input type="date" name="date" id="date">
+</fieldset>
+</body>
+</html>

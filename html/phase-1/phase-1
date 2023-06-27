@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            text-align: center;
+            
+        }
+    </style>
+    <title>page HTML</title>
+</head>
+<body>
+    <h1>liste</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>fin de liste</p>
+    <a href="https://ncode.amorce.org/ressources/Pool/TB_DEV/WEB_HTML/HTML_01_presentation_structure.html">site metis</a>
+</body>
+</html>

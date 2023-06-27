@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            
+        }
+        table{
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+<h1>html-03</h1>
+<b>Ceci est une image </b>
+<img src="formation.png" width="500" height="500">
+<blockquote>une citation en rapport avec l'image</blockquote>
+<strong>ce texte est en gras</strong><br>
+<samp>littérale ?</samp><br>
+<p>pas littérale</p><br>
+<u>on peut aussi faire une liste des balises:</u>
+<ul>
+    <li><i>en italique</i></li>
+    <li><small>en tout petit</small></ul</li>
+    <li>en exposant<sup>5</sup>ou en indice<sub>10</sub></li>
+    <li></li>
+</ul>
+<table>
+    <colgroup>
+    <col span="4" style="background-color:red">
+    <col style="background-color: blueviolet;">
+    </colgroup>
+    <caption>ceci est un tableau</caption>
+    <thead>
+    <tr>
+        <th colspan="2">nom</th>
+        <th colspan="2">prenom</th>
+        <th colspan="2">âge</th>
+    </tr>
+    
+</thead>
+<tbody>
+    <tr>
+        <td colspan="2">Michel</td>
+        <td colspan="2">Michel</td>
+        <td colspan="2">24</td>
+    </tr>
+    <tr>
+        <td colspan="2">Bombeur</td>
+        <td colspan="2">Jean</td>
+        <td colspan="2">36</td>
+    </tr>
+    <tfoot>
+        <td colspan="2">-</td>
+        <td colspan="2">-</td>
+        <td rowspan="2">60</td>
+    </tfoot>
+</tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <td>Pierre</td>
+            <td>65 800</td>
+            <td>53 200</td>
+            <td>46 400</td>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>88 000</td>
+            <td>51 500</td>
+            <td>62 300</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Jacques</td> 
+            <td>74 400</td>
+            <td>64 200</td>
+            <td>78 900</td>
+        </tr>
+        <tr>   
+           <td>68 100</td>
+           <td>76 700</td>
+           <td>99 500</td>
+        </tr>  
+    </tbody>    
+</table> 
+
+
+</body>
+</html>

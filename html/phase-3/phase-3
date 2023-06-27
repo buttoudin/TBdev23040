@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+            
+        }
+    </style>
+    
+</head>
+<body>
+<h1>html-03</h1>
+<b>Ceci est une image </b>
+<img src="formation.png" width="500" height="500">
+<blockquote>une citation en rapport avec l'image</blockquote>
+<strong>ce texte est en gras</strong><br>
+<samp>littérale ?</samp><br>
+<p>pas littérale</p><br>
+<u>on peut aussi faire une liste des balises:</u>
+<ul>
+    <li><i>en italique</i></li>
+    <li><small>en tout petit</small></ul</li>
+    <li>en exposant<sup>5</sup>ou en indice<sub>10</sub></li>
+    <li></li>
+</ul>
+
+</body>
+</html>
