@@ -1,0 +1,29 @@
+
+html {
+    font-size: 100%;
+    
+}
+body{
+    font-family: arial,sans-serif;  
+}
+ul li{
+    list-style: none;
+    background-color: black;
+    display: inline-block;
+}
+ul {
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.droite{
+    width: 400px;
+    float: right;
+    background-color: rgb(117, 121, 121);
+    height: 425px;
+    text-align: center;
+}
+.entete{
+    display: inline-flex;
+}
