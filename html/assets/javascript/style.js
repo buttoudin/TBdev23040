@@ -9,6 +9,6 @@ resultat = Number(num1) + Number(num2);
 window.alert(resultat);
 var deg = window.prompt("Quelle température fait il ?(en °C)");
 
-far = (Number(deg)*9/5)+32 + '°F';
+far = `${(Number(deg) * 9 / 5) + 32}°F`;
 
 window.alert(far);
