@@ -1,13 +1,52 @@
-var a = '100';
-var b = 100;
-var c = 1.00;
-var d = true;
+//exercice 1//
+/*var parite = window.prompt("choisissez un nombre");
+if (Number(parite)%2==0)
+{
+    window.alert("le nombre est pair");
+}
+else 
+{
+    window.alert("le nombre est impair");
+}
+//exercice 2//
+let now = new Date();
+var birth = window.prompt("Votre année de naissance ?");
+age = now.getFullYear()-Number(birth);
 
-window.alert("Ceci est une chaine de caractères:" + a);
+if (Number(age)>18)
+{
+    window.alert("vous avez "+age+"ans et vous êtes majeur");
+}
+else
+{
+    window.alert("vous avez "+age+"ans et vous êtes mineur");
+}
+*/
+//exercice 3//
+var num1 = window.prompt("saisissez un nombre entier");
+var num2 = window.prompt("saisissez un autre nombre entier");
+var operateur = window.prompt("choisissez entre : +,-,*,/");
 
-b = b--;
-window.alert(b);
-c = Number(c) + Number(a);
-window.alert(c);
+if (operateur=="+" || operateur=="-" || operateur=="*" || operateur=="/") 
+{
+    switch (operateur) {
+        case "+":
+            window.alert(Number(num1) + Number(num2));
+            break;
+        case "-":
+            window.alert(Number(num1) - Number(num2));
+            break;
+        case "*":
+            window.alert(Number(num1) * Number(num2));
+            break;
+        case "/":
+            window.alert(Number(num1) / Number(num2));
+            break;
+    }
+}
+else {
+document.write("fkdn");
+}
 
-d = false;
+
+
