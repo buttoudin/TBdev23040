@@ -1,5 +1,5 @@
 //exercice 1//
-/*var parite = window.prompt("choisissez un nombre");
+var parite = window.prompt("choisissez un nombre");
 if (Number(parite)%2==0)
 {
     window.alert("le nombre est pair");
@@ -21,7 +21,7 @@ else
 {
     window.alert("vous avez "+age+"ans et vous êtes mineur");
 }
-*/
+
 //exercice 3//
 var num1 = window.prompt("saisissez un nombre entier");
 var num2 = window.prompt("saisissez un autre nombre entier");
