@@ -1,0 +1,252 @@
+body,
+html {
+    font-size: 100%;
+}
+
+
+.formulaire label {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.formu input {
+    display: flex;
+    margin-bottom: 20px;
+    width: 40%;
+    border-style: inset;
+}
+
+.buton input {
+    display: flex;
+    align-items: center;
+}
+
+.formulaire select[name="projet"] {
+    font-size: 14px;
+    padding: 1px;
+    width: auto;
+    max-width: 100px;
+    height: auto;
+    max-height: 40px;
+
+}
+
+.formulaire textarea {
+    height: 50px;
+    width: 200px;
+    border-style: inset;
+}
+
+.bouton {
+    display: flex;
+}
+
+.asterisk {
+    color: red;
+}
+
+h2 {
+    color: brown;
+}
+
+.societeLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.contactLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.adresseLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.postalLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.villeLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.mailLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.telephoneLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.selectionLigne {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: min-content;
+}
+
+.selectionLigne label {
+    margin: 20px;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* h2 {
+    color: brown;
+}
+.formulaire{
+    
+    margin: auto auto;
+    width: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulaire label {
+    width: 23%;
+    margin-bottom: 10px;
+}
+.formulaire input{
+    height: 22px;
+    width: 67%;
+    margin-bottom: 10px;
+/* h2 {
+    color: brown;
+}
+.formulaire{
+    
+    margin: auto auto;
+    width: 50%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulaire label {
+    width: 23%;
+    margin-bottom: 10px;
+}
+.formulaire input{
+    height: 22px;
+    width: 67%;
+    margin-bottom: 10px;
+
+}
+.asterisk {
+    grid-column: 3;
+    color: red;
+}
+.formulaire .selection{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.formulaire textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.bouton {
+    width: 50%;
+    margin: auto;
+  }
+.bouton input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:921px){
+
+    .formulaire{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    
+    .formulaire input{
+        display: flex;
+        width: 80%;
+
+        
+    }
+    .formulaire span{
+        display: flex;
+        width: 10%;
+    }
+    .asterisk {
+       
+        color: red;
+        display: flex;
+        width: 10%;
+    }   
+    
+
+} 
+}
+.asterisk {
+    grid-column: 3;
+    color: red;
+}
+.formulaire .selection{
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.formulaire textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.bouton {
+    width: 50%;
+    margin: auto;
+  }
+.bouton input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:921px){
+
+    .formulaire{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+    
+    .formulaire input{
+        display: flex;
+        width: 80%;
+
+        
+    }
+    .formulaire span{
+        display: flex;
+        width: 10%;
+    }
+    .asterisk {
+       
+        color: red;
+        display: flex;
+        width: 10%;
+    }   
+    
+
+} */

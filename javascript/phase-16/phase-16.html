@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="asset/CSS/style.css">
+</head>
+
+<body>
+    <script src="asset/javascript/phase-16.js"></script>
+    <h1>Vos coordonnées :</h1>
+    <h2><span class="asterisk">*</span> Ces zones sont obligatoires pour envoyer le formulaire.</h2>
+
+    <form name="form1" method="post" class="formulaire">
+        <div class="formu">
+            <div class="societeLigne">
+                <label for="societe">Société <span class="asterisk">*</span>:</label>
+                <input type="text" id="societe" required>
+            </div>
+
+            <div class="contactLigne">
+                <label for="contact">Personne à contacter <span class="asterisk">*</span>:</label>
+                <input type="text" required id="contact">
+            </div>
+
+            <div class="adresseLigne">
+                <label for="adresse">Adresse de l'entreprise <span class="asterisk">*</span>:</label>
+                <textarea name="adresse" id="adresse" cols="30" rows="10" required></textarea><br>
+            </div>
+
+            <div class="postalLigne">
+                <label for="postal">Code Postal <span class="asterisk">*</span>:</label>
+                <input type="text" required id="postal">
+            </div>
+
+            <div class="villeLigne">
+                <label for="ville">Ville <span class="asterisk">*</span>:</label>
+                <input type="text" required id="ville">
+            </div>
+
+            <div class="mailLigne">
+                <label for="mail">E-mail <span class="asterisk">*</span>:</label>
+                <input type="email" required id="mail">
+            </div>
+
+            <div class="telephoneLigne">
+                <label for="telephone">Téléphones :</label>
+                <input type="text" id="telephone">
+            </div>
+
+            <div class="selectionLigne">
+                <div class="selection">
+                    <label for="projet">Sélectionnez l'environnement technique du projet :</label>
+                    <select class="selection" name="projet" id="projet" required>
+                        <option value="Choisissez" id="Choisissez">Choisissez</option>
+                        <option value="Access">Access</option>
+                        <option value="Java">Java</option>
+                        <option value="Delphi">Delphi</option>
+                        <option value="Windev">Windev</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="Power Builder">Power Builder</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Intranet">Intranet</option>
+                        <option value="Windows NT">Windows NT</option>
+                        <option value="Unix">Unix</option>
+                        <option value="SQL Server">SQL Server</option>
+                        <option value="Oracle">Oracle</option>
+                        <option value="Autres">Autres...</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <textarea name="technique" id="technique" cols="30" rows="10"></textarea><br>
+            </div>
+        </div>
+        <div class="bouton">
+            <input type="submit" value="envoyer" onclick="verif();">
+            <input type="reset" value="effacer">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,33 +1,32 @@
 var mot = window.prompt("choisissez un mot");
-var mottiret='';
-for (i=0; i<mot.length;i++)
-{
-    mottiret+='_ ';
-}
-console.log(mottiret);
-var mem = mot;
-var tableMot = [];
-var cache = [];
-var tableMotbis = [];
+//var mem = mot;
 var alphabet = new RegExp("^[a-z]{1}$");
 var lettreMot = "";
 var e = "";
 var c = "";
-
+var lettreProp;
 var temp;
 var reunion = "";
+var memoire = [];
+var verfiMemoire = 0;
 
 
-//definir la table de "_"
-for (let c = 0; c < mot.length; c++) {
-    cache.push("_");
+function decoupe() {
+    lettreProp = document.getElementById('textBox1').value;
+    console.log(mot);
+    mot.indexOf(lettreProp);
+    console.log(mot.indexOf(lettreProp));
 
-}
+    if (mot.indexOf(lettreProp) != -1) {
+        c = mot.substring(0, mot.indexOf(lettreProp));
+        e = mot.substring((mot.indexOf(lettreProp) + 1), mot.length);
+        mot = c + e;
+        //document.getElementById('textBox1').value = "";
+        console.log(mot);
+        console.log(mot.indexOf(lettreProp));
+    }
 
-//couper le mot
-for (let a = 0; a < mot.length; a++) {
-    lettreMot = mot.substring(a, a + 1);
-    tableMot.push(lettreMot);
+
 }
 
 function verif() {
@@ -36,38 +35,39 @@ function verif() {
     if (alphabet.test(lettreProp) == false) {
         window.alert("veuillez saisir une valeur correcte");
     }
-
-    function decoupe(){
-        mot.indexOf(lettreProp);
-        console.log(mot.indexOf(lettreProp));
-        if (mot.indexOf(lettreProp) != -1) {
-            console.log(mot + ".");
-            cache[mot.indexOf(lettreProp)] = tableMot[mot.indexOf(lettreProp)];;
-            tableMotbis[mot.indexOf(lettreProp)] = '_';
-            c = mot.substring(0, mot.indexOf(lettreProp));
-            console.log(c);
-            e = mot.substring((mot.indexOf(lettreProp) + 1), mot.length);
-            console.log(e);
-            mot = c + e;
-            console.log(mot);
-           
-
+    for (let r = 0; r < memoire.length; r++) {
+        if (lettreProp == memoire[r] && lettreProp != "") {
+            verfiMemoire = 1;
+            console.log('verification');
+            console.log(verfiMemoire);
         }
-        if (mot==""){
-            window.alert("bravo");
+    
+    }
+    console.log(verfiMemoire);
+    if (verfiMemoire != 1) {
+        var aff = document.getElementById('lettre');
+        lettreProp = document.getElementById('textBox1').value;
+        //decoupe();
+        aff.insertAdjacentHTML('afterend', lettreProp + '<br>');
+        memoire.push(lettreProp);
+        verfiMemoire = 0;
+        console.table(memoire);
+        for (let i = 0; i < mot.length; i++) {
+            decoupe();
+    
         }
     }
-
-
-   
-    decoupe();
-    for (let i = 0; i < mot.length; i++) {
-        decoupe();
-       
+    else if (verfiMemoire == 1) {
+        window.alert('Cette lettre à déjà étais saisie');
+        verfiMemoire = 0;
+        document.getElementById('textBox1').value = [""];
+        console.log(lettreProp);
     }
-   
-
-
-
+    if (mot.length==0){
+        window.alert('Bravo!');
+    }
 }
+
+
+
 
