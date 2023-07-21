@@ -5,9 +5,9 @@ function verif() {
     var ville = document.getElementById('ville').value;
     var email = document.getElementById('mail').value;
 
-    var mailVerif = RegExp('^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+    var mailVerif = RegExp('^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$');
     var lettre = RegExp('^[a-zA-Z]+$');
-    var postalVerif = RegExp('^[0-9]{5}$')
+    var postalVerif = RegExp('^[0-9]{5}$');
     
  
     if (lettre.test(societe) == false) {
