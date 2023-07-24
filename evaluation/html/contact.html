@@ -25,7 +25,7 @@
         <!-- une class nav -->
     </header>
     <div class="promotion">
-    <img src="assets/images/promotion.jpg" alt="image promotionnelle jarditou" width="1700">
+        <img src="assets/images/promotion.jpg" alt="image promotionnelle jarditou" width="1700">
     </div>
     <p>*Ces zones sont obligatoires</p>
     <form action="http://bienvu.net/script.php" method="get" id="coordonnées">
@@ -34,13 +34,16 @@
             <label for="nom">Votre nom*:</label><input type="text" pattern="^[a-z]+$" required id="nom"><br>
             <label for="prenom">Votre prénom*:</label><input type="text" pattern="^[a-z]+$" required id="prenom">
             <p></p>
-            <label for="genre">Sexe*:</label><input type="radio" id="genre" value="féminin" required>Féminin
-            <input type="radio" name="genre" value="masculin" required>Masculin
+            <fieldset>
+                <label for="genre">Sexe*:</label>
+                <input type="radio" id="genreF" name="genre" value="féminin" required>Féminin
+                <input type="radio" id="genreM" name="genre" value="masculin" required>Masculin
+            </fieldset>
             <p></p>
             <label for="date">Date de naissance*:</label><input type="date" required id="date"><br>
             <label for="postal">Code postal*:</label><input type="text" required id="postal"><br>
             <label for="adresse">Adresse:</label><input type="text" id="adresse"><br>
-            <label for="Ville">Ville:</label><input type="text" id="Ville"><br>
+            <label for="ville">Ville:</label><input type="text" id="Ville"><br>
             <label for="email">Email*:</label><input type="email" placeholder="dave.loper@afpa.fr" required id="email">
             <p></p>
             <h3>Votre demande</h3>
@@ -57,7 +60,7 @@
             <p></p>
             <label for="accord"></label><input type="checkbox" id="accord" value="accord" required>*J'accepte le
             traitement informatique de ce formulaire<br>
-            <input type="submit" value="envoyer">
+            <input type="submit" value="envoyer" onclick="verif();">
             <input type="reset" value="annuler">
         </div>
     </form>
@@ -72,6 +75,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="assets/javascript/jarditou.js"></script>
 </body>
 
 </html>
