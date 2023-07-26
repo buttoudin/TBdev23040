@@ -57,6 +57,9 @@ li a{
     width: 10%;
     height: 10%;
 }
+span{
+    color: red;
+}
 
 @media screen and (max-width:768px){
     .droite{

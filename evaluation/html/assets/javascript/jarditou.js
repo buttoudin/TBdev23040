@@ -1,43 +1,113 @@
+const button = document.querySelector('button');
+var mailVerif = RegExp('^[a-z0-9.-]+@[a-z0-9.-]{2,}.[a-z]{2,4}$');
+var lettre = RegExp('^[a-zA-Zéè]+$');
+var postalVerif = RegExp('^[0-9]{5}$');
+let form = document.getElementById('coordonnées');
+var nom = document.getElementById('nomError');
+var prenom = document.getElementById('prenomError');
+var genre = document.getElementById('genreError');
+var postal = document.getElementById('postalError');
+var email = document.getElementById('emailError');
+var sujet = document.getElementById('sujetError');
+var question = document.getElementById('questionError');
+var accord = document.getElementById('accordError');
+var date = document.getElementById('dateError');
 
 
-function verif() {
-    var mailVerif = RegExp('^[\w-\.]+@([\w-]+\.)+[\w-]{2,3}$');
-    var lettre = RegExp('^[a-zA-Z]+$');
-    var postalVerif = RegExp('^[0-9]{5}$');
+button.addEventListener('click', (e) => {
+    if (form.elements['nom'].value == '') {
+        nom.innerHTML = "Veuillez saisir un nom <br>";
+        e.preventDefault();
+    }
 
-    var nom = document.getElementById('nom').value;
-    var prenom = document.getElementById('prenom').value;
-    var sexe = document.getElementById('genre').value;
-    var postal = document.getElementById('postal').value;
-    var adresse = document.getElementById('adresse').value;
-    var ville = document.getElementById('ville').value;
-    var email = document.getElementById('email').value;
-    var sujet = document.getElementById('sujet').value;
-    var question = document.getElementById('question').value;
-    var accord = document.getElementById('accord').value;
+    else if (lettre.test(form.elements['nom'].value) == false) {
+        nom.innerHTML = 'Veuillez saisir un nom correct.<br>';
+        e.preventDefault();
 
-    if (lettre.test(nom) == false) {
-        alert('Veuillez saisir un nom correct.');
     }
-    if (lettre.test(prenom) == false) {
-        alert('Veuillez saisir un prenom correct.');
+    else {
+        nom.innerHTML = "";
     }
-    if (sexe == false){
-        alert('Veuillez saisir votre genre');
+    if (form.elements['prenom'].value == '') {
+        prenom.innerHTML = 'Veuillez saisir le prenom<br>';
+        e.preventDefault();
+
     }
-    if (postalVerif.test(postal) == false) {
-        alert('Veuillez saisir un code postal correct');
+
+    else if (lettre.test(form.elements['prenom'].value) == false) {
+        prenom.innerHTML = 'Veuillez saisir un prenom correct.<br>';
+        e.preventDefault();
+
     }
-    if (adresse == "") {
-        alert('Veuillez saisir une adresse');
+    else {
+        prenom.innerHTML = '';
     }
-    if (lettre.test(ville) == false) {
-        alert('Veuillez saisir un nom de ville correct.');
+    if (form.elements['genre'].value == false) {
+        genre.innerHTML = 'Veuillez saisir votre genre<br>';
+        e.preventDefault();
+
     }
-    if (mailVerif.test(email) == false) {
-        alert('Veuillez saisir un Email correct.');
+    else {
+        genre.innerHTML = '';
     }
-    if (sujet == false) {
-        alert('Veuillez saisir un sujet.');
+    if (form.elements['postal'].value == '') {
+        postal.innerHTML = 'Veuillez saisir votre code postal<br>';
+        e.preventDefault();
+
     }
-}   
+    else if (postalVerif.test(form.elements['postal'].value) == false) {
+        postal.innerHTML = 'Veuillez saisir un code postal correct<br>';
+        e.preventDefault();
+
+    }
+    else {
+        postal.innerHTML = '';
+    }
+    if (form.elements['email'].value == '') {
+        email.innerHTML = 'Veuillez saisir votre Email<br>';
+        e.preventDefault();
+
+    }
+    else if (mailVerif.test(form.elements['email'].value) == false) {
+        email.innerHTML = 'Veuillez saisir un Email correct.<br>';
+        e.preventDefault();
+
+    }
+    
+    else {
+        email.innerHTML = '';
+    }
+    if (form.elements['sujet'].value == false) {
+        sujet.innerHTML = 'Veuillez saisir un sujet.<br>';
+        e.preventDefault();
+
+    }
+    else {
+        sujet.innerHTML = '';
+    }
+    if (form.elements['question'].value == "") {
+        question.innerHTML = 'Veuillez poser votre question dans le champ concerné.<br>';
+        e.preventDefault();
+
+    }
+    else {
+        question.innerHTML = '';
+    }
+    if (form.elements['accord'].checked == false) {
+        accord.innerHTML = 'Veuillez cocher la case accord.<br>';
+        e.preventDefault();
+    }
+    else {
+        accord.innerHTML = '';
+    }
+    if (form.elements['date'].value == "") {
+        date.innerHTML = 'veuillez saisir une date de naissance<br>';
+        e.preventDefault();
+    }
+    else {
+        date.innerHTML = '';
+    }
+});
+
+
+
