@@ -41,6 +41,7 @@ html {
 
 .bouton {
     display: flex;
+    justify-content: center;
 }
 
 .asterisk {
@@ -58,6 +59,7 @@ h2 {
 }
 
 .contactLigne {
+    text-align: center;
     display: flex;
     flex-direction: row;
     margin: auto;
